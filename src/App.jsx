@@ -50,93 +50,66 @@ function App() {
             Start Building
           </button>
         </div>
-        <section class="flex justify-center my-14">
-          <div class="w-[90px] h-[180px] md:w-[150px] md:h-[300px] lg:w-[190px] lg:h-[375px] bg-white rounded-3xl border border-gray-200 mb-0 my-auto relative left-12">
-            <div class="w-[80px] h-[165px] md:w-[130px] md:h-[270px] lg:w-[159px] lg:h-[346px] bg-gray-200 ml-4 my-4 rounded-md"></div>
-          </div>
-          <div class="w-[215px] h-[143px] lg:w-[875px] lg:h-[586px] bg-white rounded-lg border border-gray-200">
-            <div class="flex space-x-2 my-2">
-              <div class="w-2 h-2 rounded-full bg-gray-200 ml-4"></div>
-              <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-              <div class="w-2 h-2 rounded-full bg-gray-200"></div>
-            </div>
-            <div class="flex justify-center">
-              <div class="w-[240px] h-[135pxpx] lg:w-[839px] lg:h-[540px] bg-gray-200 rounded-sm"></div>
-            </div>
-          </div>
+        <section class="my-14">
+          <img src="https://i.ibb.co/HK7WX03/front.png" alt="img not found" />
         </section>
         <section class="my-14">
-          <p class="text-center text-slate-800 tracking-wider font-semibold px-3 text-2xl my-4">
-            Trusted by over <span class="text-red-500">2000+</span> Agencies and
-            Saas Platforms
-          </p>
-          <p class="text-center tracking-wider text-md font-normal">
-            Lorem ipsum dolor sit amet, consectetur
-          </p>
+          <img
+            src="https://i.ibb.co/VV3dM8N/frontfooter.png"
+            alt="img not found"
+          />
         </section>
-        <section class="hidden md:flex justify-center my-14 space-x-16">
-          <div className="w-[80px] h-[30px] bg-gray-300 rounded-md"></div>
-          <div className="w-[80px] h-[30px] bg-gray-300 rounded-md"></div>
-          <div className="w-[80px] h-[30px] bg-gray-300 rounded-md"></div>
-          <div className="w-[80px] h-[30px] bg-gray-300 rounded-md"></div>
-          <div className="w-[80px] h-[30px] bg-gray-300 rounded-md"></div>
-          <div className="w-[80px] h-[30px] bg-gray-300 rounded-md"></div>
-          <div className="w-[80px] h-[30px] bg-gray-300 rounded-md"></div>
-          <div className="w-[80px] h-[30px] bg-gray-300 rounded-md"></div>
-        </section>
-        <section class="flex justify-center mt-56 my-14">
-          <div className="w-[724px] h-[479px] bg-gray-200 rounded-3xl"></div>
-          <div className="w-[337px] h-[304px] bg-white rounded-3xl relative top-12 right-16"></div>
-        </section>
-        <section class="flex flex-row flex-wrap md:justify-start space-x-10 md:ml-16">
-          <div className="w-[176px] h-[168px] bg-white rounded-3xl relative lg:bottom-28 lg:left-56"></div>
-          <div className="w-[176px] h-[168px] bg-white rounded-3xl relative lg:bottom-28 lg:left-56"></div>
-          <div className="w-[176px] h-[168px] bg-white rounded-3xl relative lg:bottom-28 lg:left-56"></div>
-        </section>
-        <section class="flex flex-row flex-wrap justify-center my-14">
-          <div class="w-[270px] p-4 m-2 ml-4">
-            <h2 class="text-2xl font-normal text-center">
-              Build Websites Twice as Fast
-            </h2>
-            <p class="text-md font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="w-[270px] p-4 m-2">
-            <h2 class="text-2xl font-normal text-center">
-              Drive Conversions with Speed
-            </h2>
-            <p class="text-md font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="w-[270px] p-4 m-2">
-            <h2 class="text-2xl font-normal text-center">
-              Provide Unmatched Security & Stability
-            </h2>
-            <p class="text-md font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="w-[270px] p-4 m-2 mr-4">
-            <h2 class="text-2xl font-normal text-center">
-              Explore Infinite Design Capabiities
-            </h2>
-            <p class="text-md font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+        <section>
+          <img
+            class="hidden md:block w-[80vw]"
+            src="https://i.ibb.co/y0JpScF/transparent-background.png"
+            alt="img not found"
+          />
+          <div class="flex flex-row flex-wrap justify-center my-14 relative lg:bottom-[1000px]">
+            <div class="w-[270px] p-4 m-2 ml-4">
+              <h2 class="text-2xl font-normal text-center">
+                Build Websites Twice as Fast
+              </h2>
+              <p class="text-md font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="w-[270px] p-4 m-2">
+              <h2 class="text-2xl font-normal text-center">
+                Drive Conversions with Speed
+              </h2>
+              <p class="text-md font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="w-[270px] p-4 m-2">
+              <h2 class="text-2xl font-normal text-center">
+                Provide Unmatched Security & Stability
+              </h2>
+              <p class="text-md font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="w-[270px] p-4 m-2 mr-4">
+              <h2 class="text-2xl font-normal text-center">
+                Explore Infinite Design Capabiities
+              </h2>
+              <p class="text-md font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
           </div>
         </section>
-        <div class="flex justify-center">
+        <div class="flex justify-center relative lg:bottom-[1000px] md:bottom-[600px] md:mb-[-500px]">
           <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
-        <section class="flex justify-center space-x-10 mt-44 my-14">
+        <section class="flex justify-center space-x-10 mb-14">
           <div class="w-[600px] p-4 m-2 mr-4">
             <h2 class="text-4xl font-normal text-center">
               Fully customizable website templates
