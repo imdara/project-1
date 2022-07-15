@@ -34,7 +34,7 @@ function App() {
           <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-500 hover:border-2 hover:border-gray-300 rounded-2xl cursor-pointer">
             Login
           </li>
-          <li class="bg-red-600 text-gray-100 tracking-wide text-lg font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 border-red-600 hover:bg-white hover:border-gray-200 hover:text-red-600">
+          <li class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-lg font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 border-red-600 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </li>
         </ul>
@@ -46,7 +46,7 @@ function App() {
           Design amazing websites, optimize your time
         </p>
         <div class="flex justify-center">
-          <button class="bg-red-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 hover:bg-white hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
@@ -132,7 +132,7 @@ function App() {
           </div>
         </section>
         <div class="flex justify-center">
-          <button class="bg-red-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 hover:bg-white hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
@@ -206,7 +206,7 @@ function App() {
           </div>
         </section>
         <div class="flex justify-center">
-          <button class="bg-red-600 text-gray-100 tracking-wide text-sm font-extralight px-8 py-3 rounded-3xl cursor-pointer border-2 hover:bg-white hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-sm font-extralight px-8 py-3 rounded-3xl cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             EXPLORE TEMPLATES
           </button>
         </div>
@@ -321,7 +321,7 @@ function App() {
           </h2>
         </div>
         <div class="flex justify-center mt-2 pb-16">
-          <button class="bg-red-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-3 rounded-3xl cursor-pointer border-2 border-black hover:bg-white hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-3 rounded-3xl cursor-pointer border-2 border-black hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
