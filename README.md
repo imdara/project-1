@@ -1,3 +1,3 @@
 # Homepage
 
-<img src="./images/home.png" />
+<img src="./src/images/home.png" />
