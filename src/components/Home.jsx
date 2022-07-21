@@ -2,40 +2,88 @@ import logo from "../images/logo.png";
 import front from "../images/front.png";
 import frontFooter from "../images/frontfooter.png";
 import transparentBackground from "../images/transparent-background.png";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import React from "react";
 
 const Home = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
   return (
     <>
       <nav class="hidden lg:flex bg-white rounded-3xl m-4 p-2 mx-16">
         {/* Primary Navbar */}
         <ul class="flex items-center space-x-4">
           {/* Website Logo  */}
-          <img src={logo} class="w-10 h-10" alt="img not found" />
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 border-2 border-white hover:border-gray-300 rounded-2xl cursor-pointer">
+          <Link to="/profile">
+            <img src={logo} class="w-10 h-10" alt="img not found" />
+          </Link>
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
             Products
           </li>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 border-2 border-white hover:border-gray-300 rounded-2xl cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
             Features
           </li>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 border-2 border-white hover:border-gray-300 rounded-2xl cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
             Pricing
           </li>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 border-2 border-white hover:border-gray-300 rounded-2xl cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
             Contact Us
           </li>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 border-2 border-white hover:border-gray-300 rounded-2xl cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
             Blog
           </li>
         </ul>
         {/* Secondary Navbar */}
         <ul class="flex items-center space-x-4 mr-0 m-auto">
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-500 hover:border-2 hover:border-gray-300 rounded-2xl cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-500 cursor-pointer">
             Login
           </li>
           <li class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-lg font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 border-red-600 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </li>
         </ul>
+      </nav>
+      {/* Mobile Menu */}
+      <nav class="lg:hidden bg-white rounded-3xl m-4 p-2">
+        <div class="flex items-center">
+          <Link to="/profile">
+            <img src={logo} class="w-10 h-10" alt="img not found" />
+          </Link>
+          <svg
+            onClick={() => setMobileMenu(!mobileMenu)}
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-red-500 mr-4 mx-auto hover:text-red-400 cursor-pointer"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </div>
+        {mobileMenu && (
+          <ul class="items-center space-y-4 m-4 text-center">
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+              Products
+            </li>
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+              Features
+            </li>
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+              Pricing
+            </li>
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+              Contact Us
+            </li>
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+              Blog
+            </li>
+          </ul>
+        )}
       </nav>
       <main class="p-2 m-4 my-8">
         <h2 class="text-7xl font-bold text-center">Create a website</h2>
