@@ -80,7 +80,7 @@ const Profile = () => {
           </ul>
         )}
       </nav>
-      <main class="mx-14 my-6">
+      <main class="lg:mx-14 my-6">
         <h2 class="ml-8 font-semibold tracking-wide">Profile Settings</h2>
         <nav>
           <ul class="flex justify-start ml-8">
@@ -121,12 +121,12 @@ const Profile = () => {
             <section class="bg-white border-2 p-4 py-10 border-gray-200">
               <form>
                 <div class="flex">
-                  <h2 class="ml-3 p-1 text-xl">Change Password</h2>
+                  <h2 class="ml-3 p-1 text-md lg:text-xl">Change Password</h2>
                   <button
                     class={
                       inputs.securityCurrentPass && inputs.securityNewPass
-                        ? "mr-4 mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
-                        : "mr-4 mx-auto p-2 text-gray-400 font-light text-sm bg-[#efefeb] cursor-default"
+                        ? "mr-4 mx-auto p-1 lg:p-2 text-white font-light text-xs lg:text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
+                        : "mr-4 mx-auto p-1 lg:p-2 text-white font-light text-xs lg:text-sm bg-[#aaa8a8] cursor-default"
                     }
                   >
                     Update Password
@@ -153,7 +153,7 @@ const Profile = () => {
                   New Password:
                 </label>
                 <br />
-                <div class="flex justify-start space-x-4">
+                <div class="space-y-4 lg:flex justify-start lg:space-y-0 space-x-4">
                   <input
                     onChange={(e) =>
                       setInputs({ ...inputs, securityNewPass: e.target.value })
@@ -163,7 +163,7 @@ const Profile = () => {
                     name="new"
                     id="new"
                   />
-                  <p class="px-4 text-[10px] w-[12vw] text-[#7e7e7a] border-l-2 border-[#dadad8]">
+                  <p class="px-4 text-[10px] lg:w-[12vw] text-[#7e7e7a] border-l-2 border-[#dadad8]">
                     At least ten characters including a number, uppercase and
                     lowercase letter
                   </p>
@@ -172,7 +172,7 @@ const Profile = () => {
             </section>
             <section class="bg-white border-x-2 border-b-2 p-4 border-gray-200">
               <h2 class="p-4 text-xl">Two factor authentication</h2>
-              <p class="p-4 w-2/5 text-sm font-light">
+              <p class="p-4 lg:w-2/5 text-sm font-light">
                 Enabling this will provide an extra layer of security for your
                 account. When logging in, we will ask for a special
                 authentication code from your device.
@@ -208,11 +208,11 @@ const Profile = () => {
             </section>
             <section class="bg-white border-x-2 border-b-2 p-4 border-gray-200">
               <h2 class="p-4 text-xl">Delete Account</h2>
-              <p class="p-4 w-2/5 text-sm font-light">
+              <p class="p-4 lg:w-2/5 text-sm font-light">
                 Delete your account, including all your Tickel Life projects and
                 live websites. You'll get a confirmation email first.
               </p>
-              <p class="p-4 w-2/5 text-sm font-light">
+              <p class="p-4 lg:w-2/5 text-sm font-light">
                 Because you own a workspace, you'll need to{" "}
                 <span class="text-orange-600">contact support</span> to delete
                 your account.
@@ -225,13 +225,15 @@ const Profile = () => {
             <section class="bg-white border-2 p-4 py-10 border-gray-200">
               <form>
                 <div class="flex">
-                  <h2 class="ml-3 p-1 text-xl">Update Email Address</h2>
+                  <h2 class="ml-3 p-1 text-md lg:text-xl">
+                    Update Email Address
+                  </h2>
                   <button
                     class={
                       inputs.emailSettingsNewEmail &&
                       inputs.emailSettingsCurrentPass
-                        ? "mr-4 mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
-                        : "mr-4 mx-auto p-2 text-gray-400 font-light text-sm bg-[#efefeb] cursor-default"
+                        ? "mr-4 mx-auto p-1 lg:p-2 text-white font-light text-xs lg:text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
+                        : "mr-4 mx-auto p-1 lg:p-2 text-white font-light text-xs lg:text-sm bg-[#aaa8a8] cursor-default"
                     }
                   >
                     Save Changes
@@ -303,8 +305,8 @@ const Profile = () => {
                   <button
                     class={
                       inputs.firstName && inputs.lastName && inputs.userName
-                        ? "ml-3 lg:mr-4 lg:mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
-                        : "mr-4 mx-auto p-2 text-gray-400 font-light text-sm bg-[#efefeb] cursor-default"
+                        ? "my-4 ml-3 lg:mr-4 lg:mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
+                        : "my-4 ml-3 lg:mr-4 lg:mx-auto p-2 text-white font-light text-sm bg-[#aaa8a8] cursor-default"
                     }
                   >
                     Save Changes
@@ -323,7 +325,7 @@ const Profile = () => {
                           firstName: e.target.value,
                         })
                       }
-                      class="bg-[#EFEFEB] mx-4 lg:w-96 h-8"
+                      class="bg-[#EFEFEB] mx-4 lg:w-[450px] h-10"
                       type="text"
                       name="current"
                       id="current"
@@ -341,13 +343,13 @@ const Profile = () => {
                           lastName: e.target.value,
                         })
                       }
-                      class="bg-[#EFEFEB] mx-4 lg:w-96 h-8"
+                      class="bg-[#EFEFEB] mx-4 lg:w-[450px] h-10"
                       type="text"
                       name="current"
                       id="current"
                     />
                   </div>
-                  <p class="mx-2 px-4 text-md lg:w-1/5 text-[#7e7e7a] border-l-2 border-[#dadad8]">
+                  <p class="my-4 mx-2 px-4 text-md lg:w-1/5 lg:mr-2 lg:mx-auto text-[#7e7e7a] border-l-2 border-[#dadad8]">
                     Displayed on your public profile, notifications and other
                     places.
                   </p>
@@ -366,13 +368,13 @@ const Profile = () => {
                           userName: e.target.value,
                         })
                       }
-                      class="bg-[#EFEFEB] mx-4 lg:w-[800px] h-8"
+                      class="bg-[#EFEFEB] mx-4 lg:w-[935px] h-10"
                       type="text"
                       name="new"
                       id="new"
                     />
                   </div>
-                  <p class="mx-2 px-4 text-md lg:w-1/5 text-[#7e7e7a] border-l-2 border-[#dadad8]">
+                  <p class="my-4 mx-2 px-4 text-md lg:w-1/5 lg:mr-2 lg:mx-auto text-[#7e7e7a] border-l-2 border-[#dadad8]">
                     Username must be between 3 and 20 characters long containing
                     only letters and numbers with no spaces. Used in puclic
                     places like your public profile.
