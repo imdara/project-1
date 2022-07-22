@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 const Profile = () => {
   const [current, setCurrent] = useState("security");
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [inputs, setInputs] = useState({});
+
+  const navigator = (page) => {
+    setCurrent(page);
+    setInputs({});
+  };
 
   return (
     <>
@@ -79,7 +85,7 @@ const Profile = () => {
         <nav>
           <ul class="flex justify-start ml-8">
             <li
-              onClick={() => setCurrent("profile")}
+              onClick={() => navigator("profile")}
               class={
                 current === "profile"
                   ? "tracking-wide px-3 text-sm py-4 text-gray-700 hover:text-black underline underline-offset-8 cursor-pointer"
@@ -89,7 +95,7 @@ const Profile = () => {
               Profile
             </li>
             <li
-              onClick={() => setCurrent("emailSettings")}
+              onClick={() => navigator("emailSettings")}
               class={
                 current === "emailSettings"
                   ? "tracking-wide px-3 text-sm py-4 text-gray-700 hover:text-black underline underline-offset-8 cursor-pointer"
@@ -99,7 +105,7 @@ const Profile = () => {
               Email Settings
             </li>
             <li
-              onClick={() => setCurrent("security")}
+              onClick={() => navigator("security")}
               class={
                 current === "security"
                   ? "tracking-wide px-3 text-sm py-4 text-gray-700 hover:text-black underline underline-offset-8 cursor-pointer"
@@ -111,7 +117,7 @@ const Profile = () => {
           </ul>
         </nav>
         {current === "security" && (
-          <div id="emailSettings" class="mx-8">
+          <div id="security" class="mx-8">
             <section class="bg-white border-2 p-4 py-10 border-gray-200">
               <form>
                 <div class="flex">
@@ -162,7 +168,7 @@ const Profile = () => {
             </section>
             <section class="bg-white border-x-2 border-b-2 p-4 border-gray-200">
               <h2 class="p-4 text-xl">Account Security Activity</h2>
-              <table class="ml-4 text-sm border border-gray-200 w-4/5 lg:w-[90vw]">
+              <table class="ml-4 text-sm border border-gray-200 w-4/5 lg:w-11/12">
                 <tr class="border-b">
                   <td class="p-2 border-r">Date</td>
                   <td class="p-2 border-r">Event</td>
@@ -204,16 +210,29 @@ const Profile = () => {
             <section class="bg-white border-2 p-4 py-10 border-gray-200">
               <form>
                 <div class="flex">
-                  <h2 class="ml-3 p-1 text-xl">Change Password</h2>
-                  <button class="mr-4 mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500">
+                  <h2 class="ml-3 p-1 text-xl">Update Email Address</h2>
+                  <button
+                    class={
+                      inputs.emailSettingsNewEmail &&
+                      inputs.emailSettingsCurrentPass
+                        ? "mr-4 mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
+                        : "mr-4 mx-auto p-2 text-gray-400 font-light text-sm bg-[#efefeb] cursor-default"
+                    }
+                  >
                     Save Changes
                   </button>
                 </div>
                 <label class="text-xs p-4" htmlFor="current">
-                  Current Password:
+                  New Email Address:
                 </label>
                 <br />
                 <input
+                  onChange={(e) =>
+                    setInputs({
+                      ...inputs,
+                      emailSettingsNewEmail: e.target.value,
+                    })
+                  }
                   class="bg-[#EFEFEB] mx-4 w-3/5 h-8"
                   type="text"
                   name="current"
@@ -221,10 +240,16 @@ const Profile = () => {
                 />
                 <br />
                 <label class="text-xs p-4" htmlFor="new">
-                  New Password:
+                  Current Password:
                 </label>
                 <br />
                 <input
+                  onChange={(e) =>
+                    setInputs({
+                      ...inputs,
+                      emailSettingsCurrentPass: e.target.value,
+                    })
+                  }
                   class="bg-[#EFEFEB] mx-4 w-3/5 h-8"
                   type="text"
                   name="new"
@@ -260,7 +285,13 @@ const Profile = () => {
               <form>
                 <div class="lg:flex">
                   <h2 class="ml-3 p-1 text-xl">Account Info</h2>
-                  <button class="ml-3 lg:mr-4 lg:mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500">
+                  <button
+                    class={
+                      inputs.firstName && inputs.lastName && inputs.userName
+                        ? "ml-3 lg:mr-4 lg:mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
+                        : "mr-4 mx-auto p-2 text-gray-400 font-light text-sm bg-[#efefeb] cursor-default"
+                    }
+                  >
                     Save Changes
                   </button>
                 </div>
@@ -271,6 +302,12 @@ const Profile = () => {
                     </label>
                     <br />
                     <input
+                      onChange={(e) =>
+                        setInputs({
+                          ...inputs,
+                          firstName: e.target.value,
+                        })
+                      }
                       class="bg-[#EFEFEB] mx-4 lg:w-96 h-8"
                       type="text"
                       name="current"
@@ -283,6 +320,12 @@ const Profile = () => {
                     </label>
                     <br />
                     <input
+                      onChange={(e) =>
+                        setInputs({
+                          ...inputs,
+                          lastName: e.target.value,
+                        })
+                      }
                       class="bg-[#EFEFEB] mx-4 lg:w-96 h-8"
                       type="text"
                       name="current"
@@ -302,6 +345,12 @@ const Profile = () => {
                     </label>
                     <br />
                     <input
+                      onChange={(e) =>
+                        setInputs({
+                          ...inputs,
+                          userName: e.target.value,
+                        })
+                      }
                       class="bg-[#EFEFEB] mx-4 lg:w-[800px] h-8"
                       type="text"
                       name="new"
