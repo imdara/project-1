@@ -10,7 +10,7 @@ const Home = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
     <>
-      <nav class="hidden lg:flex bg-white rounded-3xl m-4 p-2 mx-16">
+      <nav class="hidden lg:flex bg-white rounded-[2rem] m-4 p-2 mx-16">
         {/* Primary Navbar */}
         <ul class="flex items-center space-x-4">
           {/* Website Logo  */}
@@ -38,7 +38,7 @@ const Home = () => {
           <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-500 cursor-pointer">
             Login
           </li>
-          <li class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-lg font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 border-red-600 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <li class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-lg font-semibold px-6 p-2 rounded-[2rem] cursor-pointer border-2 border-white hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </li>
         </ul>
@@ -92,7 +92,7 @@ const Home = () => {
           Design amazing websites, optimize your time
         </p>
         <div class="flex justify-center">
-          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-4 rounded-[2rem] cursor-pointer border-2 border-[#EFEFEB] hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
@@ -148,7 +148,7 @@ const Home = () => {
           </div>
         </section>
         <div class="flex justify-center relative lg:bottom-[1000px] md:bottom-[600px] md:mb-[-500px]">
-          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-3xl cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-[2rem] cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
@@ -222,7 +222,7 @@ const Home = () => {
           </div>
         </section>
         <div class="flex justify-center">
-          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-sm font-extralight px-8 py-3 rounded-3xl cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-sm font-extralight px-8 py-3 rounded-[2rem] cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             EXPLORE TEMPLATES
           </button>
         </div>
@@ -339,7 +339,7 @@ const Home = () => {
           </h2>
         </div>
         <div class="flex justify-center mt-16 pb-16">
-          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-3 rounded-3xl cursor-pointer border-2 border-black hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-3 rounded-[2rem] cursor-pointer border-2 border-black hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
