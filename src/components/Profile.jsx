@@ -122,7 +122,13 @@ const Profile = () => {
               <form>
                 <div class="flex">
                   <h2 class="ml-3 p-1 text-xl">Change Password</h2>
-                  <button class="mr-4 mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500">
+                  <button
+                    class={
+                      inputs.securityCurrentPass && inputs.securityNewPass
+                        ? "mr-4 mx-auto p-2 text-white font-light text-sm bg-gradient-to-r from-red-500 to-orange-600 rounded-sm hover:from-[#efefeb] hover:to-gray-200 hover:text-red-500"
+                        : "mr-4 mx-auto p-2 text-gray-400 font-light text-sm bg-[#efefeb] cursor-default"
+                    }
+                  >
                     Update Password
                   </button>
                 </div>
@@ -131,6 +137,12 @@ const Profile = () => {
                 </label>
                 <br />
                 <input
+                  onChange={(e) =>
+                    setInputs({
+                      ...inputs,
+                      securityCurrentPass: e.target.value,
+                    })
+                  }
                   class="bg-[#EFEFEB] mx-4 w-3/5 h-8"
                   type="text"
                   name="current"
@@ -143,6 +155,9 @@ const Profile = () => {
                 <br />
                 <div class="flex justify-start space-x-4">
                   <input
+                    onChange={(e) =>
+                      setInputs({ ...inputs, securityNewPass: e.target.value })
+                    }
                     class="bg-[#EFEFEB] mx-4 w-3/5 h-8"
                     type="text"
                     name="new"
