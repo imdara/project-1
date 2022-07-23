@@ -143,7 +143,7 @@ const Profile = () => {
                       securityCurrentPass: e.target.value,
                     })
                   }
-                  class="bg-[#EFEFEB] mx-4 w-3/5 h-8"
+                  class="bg-[#EFEFEB] p-1 focus:outline-none focus:ring-2 focus:ring-gray-200 mx-4 w-3/5 h-8"
                   type="text"
                   name="current"
                   id="current"
@@ -158,7 +158,7 @@ const Profile = () => {
                     onChange={(e) =>
                       setInputs({ ...inputs, securityNewPass: e.target.value })
                     }
-                    class="bg-[#EFEFEB] mx-4 w-3/5 h-8"
+                    class="bg-[#EFEFEB] p-1 focus:outline-none focus:ring-2 focus:ring-gray-200 mx-4 w-3/5 h-8"
                     type="text"
                     name="new"
                     id="new"
@@ -250,7 +250,7 @@ const Profile = () => {
                       emailSettingsNewEmail: e.target.value,
                     })
                   }
-                  class="bg-[#EFEFEB] mx-4 w-3/5 h-8"
+                  class="bg-[#EFEFEB] p-1 focus:outline-none focus:ring-2 focus:ring-gray-200 mx-4 w-3/5 h-8"
                   type="text"
                   name="current"
                   id="current"
@@ -267,7 +267,7 @@ const Profile = () => {
                       emailSettingsCurrentPass: e.target.value,
                     })
                   }
-                  class="bg-[#EFEFEB] mx-4 w-3/5 h-8"
+                  class="bg-[#EFEFEB] p-1 focus:outline-none focus:ring-2 focus:ring-gray-200 mx-4 w-3/5 h-8"
                   type="text"
                   name="new"
                   id="new"
@@ -298,7 +298,7 @@ const Profile = () => {
                 </div>
               </div>
             </section>
-            <section class="bg-white border-2 p-4 py-10 border-gray-200">
+            <section class="bg-white border-x-2 border-b-2 p-4 py-10 border-gray-200">
               <form>
                 <div class="lg:flex">
                   <h2 class="ml-3 p-1 text-xl">Account Info</h2>
@@ -325,7 +325,7 @@ const Profile = () => {
                           firstName: e.target.value,
                         })
                       }
-                      class="bg-[#EFEFEB] mx-4 lg:w-[450px] h-10"
+                      class="bg-[#EFEFEB] p-1 focus:outline-none focus:ring-2 focus:ring-gray-200 mx-4 lg:w-60 xl:w-[450px] h-10"
                       type="text"
                       name="current"
                       id="current"
@@ -343,13 +343,13 @@ const Profile = () => {
                           lastName: e.target.value,
                         })
                       }
-                      class="bg-[#EFEFEB] mx-4 lg:w-[450px] h-10"
+                      class="bg-[#EFEFEB] p-1 focus:outline-none focus:ring-2 focus:ring-gray-200 mx-4 lg:w-60 xl:w-[450px] h-10"
                       type="text"
                       name="current"
                       id="current"
                     />
                   </div>
-                  <p class="my-4 mx-2 px-4 text-md lg:w-1/5 lg:mr-2 lg:mx-auto text-[#7e7e7a] border-l-2 border-[#dadad8]">
+                  <p class="my-4 mx-2 px-4 text-md xl:w-1/5 lg:mr-2 lg:mx-auto text-[#7e7e7a] border-l-2 border-[#dadad8]">
                     Displayed on your public profile, notifications and other
                     places.
                   </p>
@@ -368,13 +368,13 @@ const Profile = () => {
                           userName: e.target.value,
                         })
                       }
-                      class="bg-[#EFEFEB] mx-4 lg:w-[935px] h-10"
+                      class="bg-[#EFEFEB] p-1 focus:outline-none focus:ring-2 focus:ring-gray-200 mx-4 lg:w-[510px] xl:w-[935px] h-10"
                       type="text"
                       name="new"
                       id="new"
                     />
                   </div>
-                  <p class="my-4 mx-2 px-4 text-md lg:w-1/5 lg:mr-2 lg:mx-auto text-[#7e7e7a] border-l-2 border-[#dadad8]">
+                  <p class="my-4 mx-2 px-4 text-md xl:w-1/5 lg:mr-2 lg:mx-auto text-[#7e7e7a] border-l-2 border-[#dadad8]">
                     Username must be between 3 and 20 characters long containing
                     only letters and numbers with no spaces. Used in puclic
                     places like your public profile.
