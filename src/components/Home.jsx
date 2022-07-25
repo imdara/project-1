@@ -10,35 +10,35 @@ const Home = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
     <>
-      <nav class="hidden lg:flex bg-white rounded-[2rem] m-4 p-2 mx-16">
+      <nav class="hidden lg:flex bg-white rounded-[30px] m-4 p-2 mx-16">
         {/* Primary Navbar */}
         <ul class="flex items-center space-x-4">
           {/* Website Logo  */}
           <Link to="/profile">
             <img src={logo} class="w-10 h-10" alt="img not found" />
           </Link>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
             Products
           </li>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
             Features
           </li>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
             Pricing
           </li>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
             Contact Us
           </li>
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
             Blog
           </li>
         </ul>
         {/* Secondary Navbar */}
         <ul class="flex items-center space-x-4 mr-0 m-auto">
-          <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-500 cursor-pointer">
+          <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-500 cursor-pointer">
             Login
           </li>
-          <li class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-lg font-semibold px-6 p-2 rounded-[2rem] cursor-pointer border-2 border-white hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <li class="bg-gradient-to-r from-[#EB3349] to-[#F45C43] text-gray-100 tracking-wide text-custom font-semibold py-[10px] px-6 rounded-[30px] cursor-pointer border-2 border-white hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </li>
         </ul>
@@ -67,32 +67,32 @@ const Home = () => {
         </div>
         {mobileMenu && (
           <ul class="items-center space-y-4 m-4 text-center">
-            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
               Products
             </li>
-            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
               Features
             </li>
-            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
               Pricing
             </li>
-            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
               Contact Us
             </li>
-            <li class="text-slate-800 tracking-wide font-semibold px-3 text-lg hover:text-red-600 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-semibold px-3 text-custom hover:text-red-600 cursor-pointer">
               Blog
             </li>
           </ul>
         )}
       </nav>
       <main class="p-2 m-4 my-8">
-        <h2 class="text-7xl font-bold text-center">Create a website</h2>
-        <h2 class="text-7xl font-bold text-center">within no time</h2>
-        <p class="text-center text-slate-800 tracking-wide font-semibold px-3 text-lg my-14">
+        <h2 class="text-heading font-bold text-center">Create a website</h2>
+        <h2 class="text-heading font-bold text-center">within no time</h2>
+        <p class="text-center text-slate-800 tracking-wide font-semibold px-3 text-custom my-14">
           Design amazing websites, optimize your time
         </p>
         <div class="flex justify-center">
-          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-4 rounded-[2rem] cursor-pointer border-2 border-[#EFEFEB] hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-[#EB3349] to-[#F45C43] text-gray-100 tracking-wide text-2xl font-semibold px-[30px] py-[10px] h-[60px] rounded-[30px] cursor-pointer border-2 border-[#EFEFEB] hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
@@ -148,7 +148,7 @@ const Home = () => {
           </div>
         </section>
         <div class="flex justify-center relative lg:bottom-[1000px] md:bottom-[600px] md:mb-[-500px]">
-          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-[2rem] cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-[#EB3349] to-[#F45C43] text-gray-100 tracking-wide text-2xl font-semibold px-6 p-2 rounded-[30px] cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
@@ -166,25 +166,25 @@ const Home = () => {
         </section>
         <nav>
           <ul class="flex flex-row flex-wrap justify-center space-x-4">
-            <li class="text-slate-800 tracking-wide font-normal px-3 text-lg hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-normal px-3 text-custom hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
               Popular Templates
             </li>
-            <li class="text-slate-800 tracking-wide font-normal px-3 text-lg hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-normal px-3 text-custom hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
               Portfolio
             </li>
-            <li class="text-slate-800 tracking-wide font-normal px-3 text-lg hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-normal px-3 text-custom hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
               eCommerce
             </li>
-            <li class="text-slate-800 tracking-wide font-normal px-3 text-lg hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-normal px-3 text-custom hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
               Blog
             </li>
-            <li class="text-slate-800 tracking-wide font-normal px-3 text-lg hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-normal px-3 text-custom hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
               Business
             </li>
-            <li class="text-slate-800 tracking-wide font-normal px-3 text-lg hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-normal px-3 text-custom hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
               Resume
             </li>
-            <li class="text-slate-800 tracking-wide font-normal px-3 text-lg hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
+            <li class="text-slate-800 tracking-wide font-normal px-3 text-custom hover:font-semibold hover:text-red-400 hover:underline hover:underline-offset-4 cursor-pointer">
               Events
             </li>
           </ul>
@@ -222,7 +222,7 @@ const Home = () => {
           </div>
         </section>
         <div class="flex justify-center">
-          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-sm font-extralight px-8 py-3 rounded-[2rem] cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-[#EB3349] to-[#F45C43] text-gray-100 tracking-wide text-sm font-extralight px-8 py-3 rounded-[30px] cursor-pointer border-2 hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             EXPLORE TEMPLATES
           </button>
         </div>
@@ -268,11 +268,13 @@ const Home = () => {
         <div class="flex justify-center my-14 space-x-10">
           <div className="w-[650px] h-[382px] bg-gray-200 rounded-lg"></div>
           <ul>
-            <li class="text-lg tracking-wide">1. Pick a template</li>
-            <li class="text-lg tracking-wide my-6">2. Customize anything</li>
-            <li class="text-lg tracking-wide my-6">3. Use Plugins</li>
-            <li class="text-lg tracking-wide my-6">4. Connect a domain</li>
-            <li class="text-lg tracking-wide my-6">5. Publish</li>
+            <li class="text-custom tracking-wide">1. Pick a template</li>
+            <li class="text-custom tracking-wide my-6">
+              2. Customize anything
+            </li>
+            <li class="text-custom tracking-wide my-6">3. Use Plugins</li>
+            <li class="text-custom tracking-wide my-6">4. Connect a domain</li>
+            <li class="text-custom tracking-wide my-6">5. Publish</li>
           </ul>
         </div>
         <section class="flex justify-center mt-28 my-14">
@@ -339,7 +341,7 @@ const Home = () => {
           </h2>
         </div>
         <div class="flex justify-center mt-16 pb-16">
-          <button class="bg-gradient-to-r from-red-600 to-orange-600 text-gray-100 tracking-wide text-2xl font-semibold px-6 p-3 rounded-[2rem] cursor-pointer border-2 border-black hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
+          <button class="bg-gradient-to-r from-[#EB3349] to-[#F45C43] text-gray-100 tracking-wide text-2xl font-semibold px-6 p-3 rounded-[30px] cursor-pointer border-2 border-black hover:from-white hover:to-gray-200 hover:border-gray-200 hover:text-red-600">
             Start Building
           </button>
         </div>
